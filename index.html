@@ -11,59 +11,364 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="degradadoFondo">
-    <header>
+<body class="">
+      <header>
         <section class="container bg-light">
-            <h1 class="m-3 py-3 text-center">Horóscopo Rápido</h1>
+            <h1 class="my-3 py-3 text-center">Horóscopo Rápido</h1>
+        </section>
+        <section class="container ">
+          <div class="d-grid gap-2">
+            <button class="mb-3 btn btn-dark" type="button">Buscar Signo</button>
+          </div>
         </section>
     </header>
     <main>
         <section class="container">
-            <article class="row">
-                <div class="card text-center mx-2 my-1" style="width: 18rem;">
+            <article class="row justify-content-between">
+                <div class="card text-center my-1 col-2 fondoCards"  width="100%">
                     <img src="img/Aries.jpg" class="my-4 card-img-top " alt="Armadura dorada de aries">
                     <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <a href="#" class="btn btn-primary">Más...</a>
+                      <h5 class="card-title text-center text-light">Card title</h5>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light" id="staticBackdropLabel">Aries</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur et fugit reiciendis minima, corrupti rem a, quos vitae voluptates asperiores temporibus! Ad veritatis voluptate est voluptatum distinctio nobis ut laudantium.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                <div class="card text-center mx-2 my-1" style="width: 18rem;">
-                    <img src="..." class="my-4 card-img-top" alt="...">
+                <div class="card text-center my-1 col-2 fondoCards"  width="100%">
+                    <img src="img/Aries.jpg" class="my-4 card-img-top " alt="Armadura dorada de aries">
                     <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <a href="#" class="btn btn-primary">Más...</a>
+                      <h5 class="card-title text-center text-light">Card title</h5>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light" id="staticBackdropLabel">Aries</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur et fugit reiciendis minima, corrupti rem a, quos vitae voluptates asperiores temporibus! Ad veritatis voluptate est voluptatum distinctio nobis ut laudantium.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                <div class="card text-center mx-2 my-1" style="width: 18rem;">
-                    <img src="..." class="my-4 card-img-top" alt="...">
+                <div class="card text-center my-1 col-2 fondoCards"  width="100%">
+                    <img src="img/Aries.jpg" class="my-4 card-img-top " alt="Armadura dorada de aries">
                     <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <a href="#" class="btn btn-primary">Más...</a>
+                      <h5 class="card-title text-center text-light">Card title</h5>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light" id="staticBackdropLabel">Aries</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur et fugit reiciendis minima, corrupti rem a, quos vitae voluptates asperiores temporibus! Ad veritatis voluptate est voluptatum distinctio nobis ut laudantium.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                <div class="card text-center mx-2 my-1" style="width: 18rem;">
-                    <img src="..." class="my-4 card-img-top" alt="...">
+                <div class="card text-center my-1 col-2 fondoCards"  width="100%">
+                    <img src="img/Aries.jpg" class="my-4 card-img-top " alt="Armadura dorada de aries">
                     <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <a href="#" class="btn btn-primary">Más...</a>
+                      <h5 class="card-title text-center text-light">Card title</h5>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light" id="staticBackdropLabel">Aries</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur et fugit reiciendis minima, corrupti rem a, quos vitae voluptates asperiores temporibus! Ad veritatis voluptate est voluptatum distinctio nobis ut laudantium.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                <div class="card text-center mx-2 my-1" style="width: 18rem;">
-                    <img src="..." class="my-4 card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <a href="#" class="btn btn-primary">Más...</a>
-                    </div>
-                  </div>
-                
-                
             </article>
-        </section>
-        <section class="bg-dark">
-
-        </section>
+            <article class="row justify-content-between">
+                <div class="card text-center my-1 col-2 fondoCards"  width="100%">
+                    <img src="img/Aries.jpg" class="my-4 card-img-top " alt="Armadura dorada de aries">
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-light">Card title</h5>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light" id="staticBackdropLabel">Aries</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur et fugit reiciendis minima, corrupti rem a, quos vitae voluptates asperiores temporibus! Ad veritatis voluptate est voluptatum distinctio nobis ut laudantium.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card text-center my-1 col-2 fondoCards"  width="100%">
+                    <img src="img/Aries.jpg" class="my-4 card-img-top " alt="Armadura dorada de aries">
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-light">Card title</h5>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light" id="staticBackdropLabel">Aries</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur et fugit reiciendis minima, corrupti rem a, quos vitae voluptates asperiores temporibus! Ad veritatis voluptate est voluptatum distinctio nobis ut laudantium.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card text-center my-1 col-2 fondoCards"  width="100%">
+                    <img src="img/Aries.jpg" class="my-4 card-img-top " alt="Armadura dorada de aries">
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-light">Card title</h5>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light" id="staticBackdropLabel">Aries</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur et fugit reiciendis minima, corrupti rem a, quos vitae voluptates asperiores temporibus! Ad veritatis voluptate est voluptatum distinctio nobis ut laudantium.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card text-center my-1 col-2 fondoCards"  width="100%">
+                    <img src="img/Aries.jpg" class="my-4 card-img-top " alt="Armadura dorada de aries">
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-light">Card title</h5>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light" id="staticBackdropLabel">Aries</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur et fugit reiciendis minima, corrupti rem a, quos vitae voluptates asperiores temporibus! Ad veritatis voluptate est voluptatum distinctio nobis ut laudantium.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </article>
+            <article class="row justify-content-between">
+                <div class="card text-center my-1 col-2 fondoCards"  width="100%">
+                    <img src="img/Aries.jpg" class="my-4 card-img-top " alt="Armadura dorada de aries">
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-light">Card title</h5>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light" id="staticBackdropLabel">Aries</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur et fugit reiciendis minima, corrupti rem a, quos vitae voluptates asperiores temporibus! Ad veritatis voluptate est voluptatum distinctio nobis ut laudantium.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card text-center my-1 col-2 fondoCards"  width="100%">
+                    <img src="img/Aries.jpg" class="my-4 card-img-top " alt="Armadura dorada de aries">
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-light">Card title</h5>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light" id="staticBackdropLabel">Aries</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur et fugit reiciendis minima, corrupti rem a, quos vitae voluptates asperiores temporibus! Ad veritatis voluptate est voluptatum distinctio nobis ut laudantium.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card text-center my-1 col-2 fondoCards"  width="100%">
+                    <img src="img/Aries.jpg" class="my-4 card-img-top " alt="Armadura dorada de aries">
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-light">Card title</h5>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light" id="staticBackdropLabel">Aries</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur et fugit reiciendis minima, corrupti rem a, quos vitae voluptates asperiores temporibus! Ad veritatis voluptate est voluptatum distinctio nobis ut laudantium.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card text-center my-1 col-2 fondoCards"  width="100%">
+                    <img src="img/Aries.jpg" class="my-4 card-img-top " alt="Armadura dorada de aries">
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-light">Card title</h5>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light" id="staticBackdropLabel">Aries</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur et fugit reiciendis minima, corrupti rem a, quos vitae voluptates asperiores temporibus! Ad veritatis voluptate est voluptatum distinctio nobis ut laudantium.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </article>
+            
+            
+            
+          </section>
+          <section class="sectionBackground py-4 my-3 row justify-content-evenly">
+            <div class="card text-center my-1 col-2 mx-1" width="100%">
+              <img src="img/83-830777_firenation-symbol-fire-nation-symbol-png.png" class="my-4 card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Aire</h5>
+                <a href="#" class="btn btn-primary">Signos Correspondientes</a>
+              </div>
+            </div>    
+            <div class="card text-center my-1 col-2" width="100%">
+              <img src="img/131-1316214_symbol-air-color-avatar-the-last-airbender-air.png" class="my-4 card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Agua</h5>
+                <a href="#" class="btn btn-primary">Signos Correspondientes</a>
+              </div>
+            </div>    
+            <div class="card text-center my-1 col-2" width="100%">
+              <img src="img/imgbin_sokka-youtube-toph-beifong-earth-symbol-png (1).png" class="my-4 card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Tierra</h5>
+                <a href="#" class="btn btn-primary">Signos Correspondientes</a>
+              </div>
+            </div>    
+            <div class="card text-center my-1 col-2" width="100%">
+              <img src="img/png-transparent-aang-sokka-classical-element-korra-symbol-elemental-chemical-element-text-spiral.png" class="my-4 card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Fuego</h5>
+                <a href="#" class="btn btn-primary">Signos Correspondientes</a>
+              </div>
+            </div>    
+          </section>
     </main>
     <footer>
+      <section>
+        <p class="bannerFooter">&#169 All rights reserved</p>
+      </section>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/principal.js"></script>
     </footer>

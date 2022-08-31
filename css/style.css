@@ -17,3 +17,27 @@
     #1d2596 100%
   );
 }
+
+.bannerFooter {
+  color: aliceblue;
+  padding: 30px;
+  text-align: center;
+}
+.fondoCards {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 9%,
+    rgba(40, 41, 193, 1) 41%,
+    rgba(65, 68, 196, 1) 64%,
+    rgba(68, 62, 194, 1) 83%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+body{
+  background-image: url("/img/8520-universo.jpg");
+}
+.sectionBackground{
+  background-image: url("/img/8516-universo.jpg");
+  border: #1d2596 solid 3px;
+}
