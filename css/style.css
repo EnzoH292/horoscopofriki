@@ -1,6 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
 
 .degradadoFondo {
@@ -40,4 +41,37 @@ body{
 .sectionBackground{
   background-image: url("/img/8516-universo.jpg");
   border: #1d2596 solid 3px;
+}
+.cardFuego{
+  background-image: url('');
+}
+.cardAgua{
+  background-image: url('');
+}
+.cardAire{
+  background-image: url('');
+}
+.cardTierra{
+  background-image: url('');
+}
+
+
+
+
+
+
+/* Dispositivos Medium md*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+  .mediaquerysMediano{
+  
+  }
+}
+
+
+
+
+
+/*Dispositivos Small sm*/
+@media all and (max-width: 767px){
 }
