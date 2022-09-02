@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.nuevaFuente{
+  font-family: 'PT Serif', serif;
+}
+
 .bannerFooter {
   color: aliceblue;
   padding: 30px;
