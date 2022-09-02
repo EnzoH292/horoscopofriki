@@ -1,19 +1,77 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
 
-.degradadoFondo {
-  background-image: linear-gradient(
+.nuevaFuente{
+  font-family: 'PT Serif', serif;
+}
+
+.bannerFooter {
+  color: aliceblue;
+  padding: 30px;
+  text-align: center;
+}
+.fondoCards {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
     180deg,
-    #ff04b8 0,
-    #ff00c1 12.5%,
-    #ff00c6 25%,
-    #f50ec5 37.5%,
-    #ca16bd 50%,
-    #9f1bb2 62.5%,
-    #7720a8 75%,
-    #4f239e 87.5%,
-    #1d2596 100%
+    rgba(2, 0, 36, 1) 9%,
+    rgba(40, 41, 193, 1) 41%,
+    rgba(65, 68, 196, 1) 64%,
+    rgba(68, 62, 194, 1) 83%,
+    rgba(0, 212, 255, 1) 100%
   );
+}
+
+.sombra{
+  color: white;
+  text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+}
+
+body{
+  background-image: url("/img/8520-universo.jpg");
+}
+.sectionBackground{
+  background-image: url("/img/8516-universo.jpg");
+  border: #1d2596 solid 3px;
+}
+.cardFuego{
+  background-image: url('/img/volcan.jpg');
+}
+.cardAgua{
+  background-image: url('/img/ola.jpg');
+}
+.cardAire{
+  background-image: url('/img/tornado.jpg');
+}
+.cardTierra{
+  background-image: url('/img/roca.jpg');
+}
+.fondoZodiaco{
+  background-image: url('/img/zodiaco.jpg');
+  border: 1px #1d2596 solid;
+}
+
+
+
+
+/* Dispositivos Medium md*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+  .mediaquerysMediano{
+  
+  }
+}
+
+
+
+
+
+/*Dispositivos Small sm*/
+@media all and (max-width: 767px){
 }

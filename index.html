@@ -7,63 +7,537 @@
     <meta name="author" content="Heredia, Enzo Alejandro">
     <meta name="description" content="Página con detalles sobre signos zodiacales y sus características">
     <meta name="keywords" content="horóscopo, zodíaco, aries, leo, acuario, tauro, libre, carpricornio, piscis, virgo, geminis, cancer, escorpio, elementos, aire, agua, tierra, fuego">
-    <title>Horóscopo</title>
+    <title>ZodiacoFriki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="degradadoFondo">
-    <header>
-        <section class="container bg-light">
-            <h1 class="m-3 py-3 text-center">Horóscopo Rápido</h1>
+<body>
+      <header>
+        <section class="container-fluid fondoZodiaco">
+            <h1 class="my-3 py-3 text-center text-light sombra nuevaFuente">ZodiacoFriki</h1>
+        </section>
+        <section class="container-fluid ">
+          <div class="d-grid gap-2">
+            <button class="my-5 btn btn-dark border-primary" type="button" data-bs-toggle="modal" data-bs-target="#formulario">Buscar Signo</button>
+            <!-- Modal Formulario -->
+            <div class="modal fade" id="formulario" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="formularioLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content fondoCards">
+
+                  <form class="container-fluid my-3 row g-3 needs-validation" novalidate>
+                    <div>
+                      <div>
+                        <h2 class="modal-title text-light nuevaFuente mb-4" id="formularioLabel">Fecha de Nacimiento</h2>
+                        
+    <input class="form-control" list="Dias" id="fechas" placeholder="Seleccionar...">
+    <datalist id="Dias">
+      <option value="01">
+      <option value="02">
+      <option value="03">
+      <option value="04">
+      <option value="05">
+      <option value="06">
+      <option value="07">
+      <option value="08">
+      <option value="09">
+      <option value="10">
+      <option value="11">
+      <option value="12">
+      <option value="13">
+      <option value="14">
+      <option value="15">
+      <option value="16">
+      <option value="17">
+      <option value="18">
+      <option value="19">
+      <option value="20">
+      <option value="21">
+      <option value="22">
+      <option value="23">
+      <option value="24">
+      <option value="25">
+      <option value="26">
+      <option value="27">
+      <option value="28">
+      <option value="29">
+      <option value="30">
+      <option value="31">
+    </datalist>
+    </div>
+    <div>
+    <h2 class="modal-title text-light nuevaFuente my-3" id="formularioLabel">Mes</h2>
+    <input class="form-control" list="meses" id="mes" placeholder="Seleccionar...">
+    <datalist id="meses">
+      <option value="Enero">
+        <option value="Febrero">
+        <option value="Marzo">
+        <option value="Abril">
+        <option value="Mayo">
+        <option value="Junio">
+        <option value="Julio">
+        <option value="Agosto">
+        <option value="Septiembre">
+        <option value="Octubre">
+        <option value="Noviembre">
+        <option value="Diciembre">
+    </datalist>
+    </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary mt-2" type="submit">Confirmar</button>
+                    </div>
+                  </form>
+
+
+                  <div class="modal-body text-light">
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
     </header>
-    <main>
-        <section class="container">
-            <article class="row">
-                <div class="card text-center mx-2 my-1" style="width: 18rem;">
-                    <img src="img/Aries.jpg" class="my-4 card-img-top " alt="Armadura dorada de aries">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <a href="#" class="btn btn-primary">Más...</a>
-                    </div>
-                  </div>
-                <div class="card text-center mx-2 my-1" style="width: 18rem;">
-                    <img src="..." class="my-4 card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <a href="#" class="btn btn-primary">Más...</a>
-                    </div>
-                  </div>
-                <div class="card text-center mx-2 my-1" style="width: 18rem;">
-                    <img src="..." class="my-4 card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <a href="#" class="btn btn-primary">Más...</a>
-                    </div>
-                  </div>
-                <div class="card text-center mx-2 my-1" style="width: 18rem;">
-                    <img src="..." class="my-4 card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <a href="#" class="btn btn-primary">Más...</a>
-                    </div>
-                  </div>
-                <div class="card text-center mx-2 my-1" style="width: 18rem;">
-                    <img src="..." class="my-4 card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <a href="#" class="btn btn-primary">Más...</a>
-                    </div>
-                  </div>
-                
-                
-            </article>
-        </section>
-        <section class="bg-dark">
 
-        </section>
+    <main class="container">
+        <section class="container-fluid">
+
+            <article class="row container-fluid justify-content-lg-between mb-2">
+                <div class="card text-center my-1 col-lg-2 col-md-6 fondoCards"  width="100%">
+                    <img src="img/Aries.jpg" class="my-3 card-img-top " alt="Armadura dorada de aries">
+                    <div class="card-body">
+                      <h2 class="card-title text-center text-light sombra nuevaFuente">Aries</h2>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#aries">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="aries" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ariesLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h2 class="modal-title text-light nuevaFuente" id="ariesLabel">Aries</h2>
+                          </div>
+                          <div class="modal-body text-light">
+                            Las personas del signo del zodiaco Aries —todas las nacidas entre el 21 de marzo y el 20 de abril— suelen ser, según la astrología occidental, entusiastas, enérgicos, ﻿valientes, pioneras, independientes, inquietas, con un carácter dispuesto a liderar e incluso, a veces pueden resultar algo tercas e incluso agresivas.
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card text-center my-1 col-lg-2 col-md-6 fondoCards"  width="100%">
+                    <img src="img/Tauro.jpg" class="my-3 card-img-top " alt="Armadura dorada de tauro">
+                    <div class="card-body">
+                      <h2 class="card-title text-center text-light sombra nuevaFuente">Tauro</h2>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#tauro">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="tauro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="tauroLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light nuevaFuente" id="tauroLabel">Tauro</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Las personas cuyo signo del zodiaco es Tauro —todas las nacidas entre 21 de abril y el 20 de mayo— suelen ser definidas por la astronomía occidental como pacientes, perseverantes, con una gran fuerza de voluntad, cariñosas, prácticas, respetuosas, amantes del tiempo para sí mismas y de gran corazón. Sin embargo, al igual que el toro que las simboliza, pueden llegar a tener muy mal humor al enfadarse y ser muy rencorosas.
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card text-center my-1 col-lg-2 col-md-6 fondoCards"  width="100%">
+                    <img src="img/Geminis.jpg" class="my-3 card-img-top " alt="Armadura dorada de geminis">
+                    <div class="card-body">
+                      <h2 class="card-title text-center text-light sombra nuevaFuente">Géminis</h2>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#geminis">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="geminis" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="geminisLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light nuevaFuente" id="geminisLabel">Géminis</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Las personas cuyo signo del zodiaco es Tauro —todas las nacidas entre 21 de abril y el 20 de mayo— suelen ser definidas por la astronomía occidental como pacientes, perseverantes, con una gran fuerza de voluntad, cariñosas, prácticas, respetuosas, amantes del tiempo para sí mismas y de gran corazón. Sin embargo, al igual que el toro que las simboliza, pueden llegar a tener muy mal humor al enfadarse y ser muy rencorosas.
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card text-center my-1 col-lg-2 col-md-6 fondoCards"  width="100%">
+                    <img src="img/Cancer.jpg" class="my-3 card-img-top " alt="Armadura dorada de cancer">
+                    <div class="card-body">
+                      <h2 class="card-title text-center text-light sombra nuevaFuente">Cáncer</h2>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#cancer">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="cancer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cancerLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light nuevaFuente" id="cancerLabel">Cáncer</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Tradicionalmente, la astrología occidental atribuye al signo del zodiaco Cáncer —aquel que abarca entre el 22 de junio y el 21 de julio— características como la lealtad, la simpatía, la sensualidad, la intuición, la creatividad, la cautela, la necesidad de proteger a sus familiares y amigos y la sensibilidad. Pero también, las personas de este signo pueden ser celosas, inseguras, desconfiadas, muy golosas e incluso introvertidas.
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </article>
+            <article class="row container-fluid justify-content-lg-between my-2">
+                <div class="card text-center my-1 col-lg-2 col-md-6 fondoCards"  width="100%">
+                    <img src="img/Leo.jpg" class="my-3 card-img-top " alt="Armadura dorada de leo">
+                    <div class="card-body">
+                      <h2 class="card-title text-center text-light sombra nuevaFuente">Leo</h2>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#leo">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="leo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="leoLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h2 class="modal-title text-light nuevaFuente" id="leoLabel">Leo</h2>
+                          </div>
+                          <div class="modal-body text-light">
+                            Las personas nacidas en Leo —entre el 22 de julio y el 23 de agosto— suelen tener, según la astrología, un carácter fiel, bondadoso, optimista, generoso y extrovertido. Son ambiciosos, valientes, independientes y seguros de sí mismos. Por otro lado, como punto negativo, los Leo son idealistas, inteligentes, tercos, un poco arrogantes, orgullosos y pueden tener mal humor.
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card text-center my-1 col-lg-2 col-md-6 fondoCards"  width="100%">
+                    <img src="img/Virgo.jpg" class="my-3 card-img-top " alt="Armadura dorada de virgo">
+                    <div class="card-body">
+                      <h2 class="card-title text-center text-light sombra nuevaFuente">Virgo</h2>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#virgo">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="virgo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="virgoLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light nuevaFuente" id="virgoLabel">Virgo</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Los Virgo —quienes nacieron entre el 24 de agosto y el 23 de septiembre—, según la astronomía occidental, son serios, cautos, disciplinados, meticulosas, analíticas, modestas, tímidas, trabajadoras y tienen un gran sentido de la responsabilidad y de la amistad.
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card text-center my-1 col-lg-2 col-md-6 fondoCards"  width="100%">
+                    <img src="img/Libra.jpg" class="my-3 card-img-top " alt="Armadura dorada de libra">
+                    <div class="card-body">
+                      <h2 class="card-title text-center text-light sombra nuevaFuente">Libra</h2>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#libra">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="libra" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="libraLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light nuevaFuente" id="libraLabel">Libra</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Los Libra —nacidos entre el 24 de septiembre y el 23 de octubre— suelen definirse como idealistas, sociales y diplomáticos. Son personas calmadas, afables, equilibradas y que intentan mantenerse neutrales cuando se presentan conflictos. Sin embargo, los Libra, también odian que se les contradiga, aunque en ocasiones no son capaces de enfrentarse a los demás.
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card text-center my-1 col-lg-2 col-md-6 fondoCards"  width="100%">
+                    <img src="img/Escorpio.jpg" class="my-3 card-img-top " alt="Armadura dorada de escorpio">
+                    <div class="card-body">
+                      <h3 class="card-title text-center text-light sombra nuevaFuente">Escorpio</h3>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#escorpio">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="escorpio" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="escorpioLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light nuevaFuente" id="escorpioLabel">Escorpio</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Los Escorpio —signo que abarca desde el 24 de octubre hasta el 22 de noviembre— se definen, según el zodiaco occidental, como personas con una gran cortesía, observadoras, buenas consejeras y con mucha fuerza de voluntad y capacidad para razonar. Pero también son envidiosas, posesivas, impulsivas y desconfiadas.
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </article>
+            <article class="row container-fluid justify-content-lg-between my-2">
+                <div class="card text-center my-1 col-lg-2 col-md-6 fondoCards"  width="100%">
+                    <img src="img/Sagitario.jpg" class="my-3 card-img-top " alt="Armadura dorada de sagitario">
+                    <div class="card-body">
+                      <h3 class="card-title text-center text-light sombra nuevaFuente">Sagitario</h3>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#sagitario">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="sagitario" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sagitarioLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h2 class="modal-title text-light nuevaFuente" id="sagitarioLabel">Sagitario</h2>
+                          </div>
+                          <div class="modal-body text-light">
+                            Las personas nacidas en Sagitario —entre el 23 de noviembre y el 21 de diciembre— suelen ser simpáticas, sinceras, honestas, optimistas y un tanto intelectuales. Este signo se caracteriza por la empatía, la comprensión y la necesidad de vivir aventuras y sentirse libre. Sin embargo, los Sagitario también pueden ser impacientes.
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card text-center my-1 col-lg-2 col-md-6 fondoCards"  width="100%">
+                    <img src="img/Capricornio.jpg" class="my-3 card-img-top " alt="Armadura dorada de capricornio">
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-light sombra nuevaFuente">Capricornio</h5>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#capricornio">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="capricornio" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="capricornioLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light nuevaFuente" id="capricornioLabel">Capricornio</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Todas aquellas personas nacidas en la época navideña —entre el 22 de diciembre y el 20 de enero— son Capricornio. Este signo es muy estable, por lo que sus características son el trabajo duro, la fiabilidad, la prudencia, la practicidad, la ambición y la justicia. En el lado malo, la melancolía y el pesimismo pueden ser sus dos grandes enemigos para alcanzar la felicidad.
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card text-center my-1 col-lg-2 col-md-6 fondoCards"  width="100%">
+                    <img src="img/Acuario.jpg" class="my-3 card-img-top " alt="Armadura dorada de acuario">
+                    <div class="card-body">
+                      <h2 class="card-title text-center text-light sombra nuevaFuente">Acuario </h2>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#acuario">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="acuario" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="acuarioLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light nuevaFuente" id="acuarioLabel">Acuario </h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            La personalidad de los Acuario —nacidos entre el 21 de enero y el 19 de febrero—, según la astrología occidental, suele ser muy abierta. Son simpáticos, divertidos, originales, idealistas, lógicos, con sentido del humor, soñadores, imaginativos, honestos, leales, tolerantes y sin prejuicios.
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card text-center my-1 col-lg-2 col-md-6 fondoCards"  width="100%">
+                    <img src="img/Piscis.jpg" class="my-3 card-img-top " alt="Armadura dorada de piscis">
+                    <div class="card-body">
+                      <h3 class="card-title text-center text-light sombra nuevaFuente">Piscis</h3>
+                      <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#piscis">
+                        Más
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="piscis" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="piscisLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content fondoCards">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-light nuevaFuente" id="piscisLabel">Piscis</h5>
+                          </div>
+                          <div class="modal-body text-light">
+                            Al signo Piscis —que abarca entre el 20 de febrero y el 20 de marzo— se le atribuyen características como la creatividad, imaginación, la sensibilidad, la amabilidad, la intuición, la empatía, la paciencia y la facilidad para soñar. Además, los Piscis suelen ser personas tranquilas que evitan meterse en problemas e incluso les llega a costar rebelarse ante algunas injusticias.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </article>
+            
+            
+            
+            
+            
+          </section>
+          <section class="sectionBackground p-4 my-5 row justify-content-evenly">
+            <div class="card text-center m-1 col-lg-2 col-md-4 cardAire" width="100%">
+              <img src="img/aire.png" class="my-4 card-img-top" alt="...">
+              <div class="card-body container-fluid">
+                <h5 class="card-title text-center sombra">Aire</h5>
+                <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#elementoAire">
+                  Signos
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="elementoAire" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="elementoAireLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content cardAire">
+                      <div class="modal-header">
+                        <h5 class="modal-title text-light sombra" id="elementoAireLabel">Signos de Aire</h5>
+                      </div>
+                      <div class="modal-body text-light bg-dark">
+                        Géminis, Libra, Acuario
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn bg-dark text-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>    
+            <div class="card text-center m-1 col-lg-2 col-md-4 cardAgua" width="100%">
+              <img src="img/agua.png" class="my-4 card-img-top" alt="...">
+              <div class="card-body container-fluid">
+                <h5 class="card-title text-center text-light sombra">Agua</h5>
+                <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#elementoAgua">
+                  Signos
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="elementoAgua" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="elementoAguaLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content cardAgua">
+                      <div class="modal-header">
+                        <h5 class="modal-title text-light sombra" id="elementoAguaLabel">Signos de Agua</h5>
+                      </div>
+                      <div class="modal-body text-light bg-dark">
+                        Cáncer, Escorpio, Piscis
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn bg-dark text-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>    
+            <div class="card text-center m-1 col-lg-2 col-md-4 cardTierra" width="100%">
+              <img src="img/tierra.png" class="my-4 card-img-top" alt="...">
+              <div class="card-body container-fluid">
+                <h5 class="card-title text-center text-light sombra">Tierra</h5>
+                <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#elementoTierra">
+                  Signos
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="elementoTierra" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="elementoTierraLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content cardTierra">
+                      <div class="modal-header">
+                        <h5 class="modal-title text-light sombra" id="elementoTierraLabel">Signos de Tierra</h5>
+                      </div>
+                      <div class="modal-body text-light bg-dark">
+                        Tauro, Virgo, Capricornio
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn bg-dark text-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>    
+            <div class="card text-center m-1 col-lg-2 col-md-4 cardFuego" width="100%">
+              <img src="img/fuego.png" class="my-4 card-img-top" alt="...">
+              <div class="card-body container-fluid">
+                <h5 class="card-title text-center text-light sombra">Fuego</h5>
+                <button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#elementoFuego">
+                  Signos
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="elementoFuego" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="elementoFuegoLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content cardFuego">
+                      <div class="modal-header">
+                        <h5 class="modal-title text-light sombra" id="elementoFuegoLabel">Signos de Fuego</h5>
+                      </div>
+                      <div class="modal-body text-light bg-dark">
+                        Leo, Aries, Sagitario
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn bg-dark text-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
     </main>
     <footer>
+      <section>
+        <p class="bannerFooter sombra">&#169 All rights reserved</p>
+      </section>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/principal.js"></script>
     </footer>
